@@ -1,0 +1,14 @@
+// Node JS in extensions
+
+In manifest.xml under resources
+<CEFCommandLine>
+<Parameter>--enable-nodejs</Parameter>
+<Parameter>--mixed-context</Parameter>
+</CEFCommandLine>
+
+ExtensionManifest and Required CSXS Runtime versions should be the same (5.0)
+
+In JS
+
+const fs = require('fs');
+const crypto = require('crypto');
